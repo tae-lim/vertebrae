@@ -90,7 +90,7 @@ var CommentsView = Backbone.View.extend({
   initialize: function() {
     /* Backbone events bubble up through collections,
      * so monitoring a model in a collection is easy! */
-    this.collection.on('change:votes', this.render, this);
+    this.collection.on('change', this.render, this);
   },
 
   // Now we must render the collection:
